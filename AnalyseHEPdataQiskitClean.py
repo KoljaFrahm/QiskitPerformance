@@ -56,7 +56,7 @@ def splitData(x_data, y_data, ratio_train, ratio_test, ratio_val):
     x_train, x_val, y_train, y_val = train_test_split(
         x_remaining, y_remaining, test_size=ratio_val_adjusted)
     
-    return x_test, x_train, x_val, y_test, y_train, y_val
+    return x_train, x_test, x_val, y_train, y_test, y_val
 
 def getData():
     data_bkg = np.load("QML-HEP-data/x_data_bkg_8features.npy")
